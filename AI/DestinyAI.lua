@@ -203,8 +203,6 @@ local warpDimID = 0                           -- Fake dimension for not diable g
                     os.exit(false)
                 end
             end     
-        end
-
         if not f.exists("/destinyAI/backup/countdown") then      -- system check if file for saving entries exists 
             jumpClockSaver = io.open("/destinyAI/backup/countdown","w")
             jumpClockSaver:write(returnToCourseTimer)
