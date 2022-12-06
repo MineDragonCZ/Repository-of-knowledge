@@ -43,7 +43,7 @@
     onlineCheck()
     createInstallDirectory()
     createSystemShortcut()
-    s.execute("wget -f https://pastebin.com/raw/aCFUaUNv /destinyAI/AI.lua")  -- Edit link
+    s.execute("wget -f https://raw.githubusercontent.com/Fredyman95/Repository-of-knowledge/main/AI/DestinyAI.lua /destinyAI/AI.lua")
 
     print([[
     Installation complete!
