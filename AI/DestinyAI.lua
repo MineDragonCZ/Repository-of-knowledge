@@ -93,6 +93,7 @@ local warpDimID = 0                           -- Fake dimension for not diable g
         time = tonumber(m.random((minStop * timeMultiplayer), (maxStop * timeMultiplayer)) + safetyTime*20)
         timer(0.5)
         clock.setCountdown(time)
+        ------------------------------------------------------------------------- save clock time :D
     end
 
     local function setChance()
@@ -303,6 +304,7 @@ rewrite to id = id + 1 (line 186)
 move ftl fly check into missionParameters() function - this is needed!!!!!   (line 197)
 earth warp stuck... add if currentPlanet() == 0 then currentPlanet = 1 end  or check why destiny dont want to jump to any other dim
 move events below initialization phase   ?? - Test it maybe its not necessary
+creat program that delete directory /destinyAI/backup
 
 
     Done:
