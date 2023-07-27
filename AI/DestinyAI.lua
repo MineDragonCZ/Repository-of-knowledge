@@ -189,7 +189,9 @@ local warpDimID = 0                           -- Fake dimension for not diable g
                 clock.setCountdown(tonumber(jumpClockSaver:read()))
                 jumpClockSaver:close()                       
                 -- setting the fake position of the gate so it thinks it is on the planet the ship is orbiting
-                console.setCommand("jsg sgsetfakepos " .. fakeDimPos .. " " .. fakeDim[id] .. " " .. destinyGatePos)
+                fd = fakeDim[id]
+                if fd == nil then fd = 0 end
+                console.setCommand("jsg sgsetfakepos " .. fakeDimPos .. " " .. fd .. " " .. destinyGatePos)
                 console.executeCommand()
             end
         end
